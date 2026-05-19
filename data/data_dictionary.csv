@@ -1,0 +1,28 @@
+column,description
+district_id,Generated row identifier for each district/case; original dataset does not include public district names.
+NABOVE,Number of students above the national median on the math section.
+NBELOW,Number of students below the national median on the math section.
+LOWINC,Percentage of low-income students.
+PERASIAN,Percentage of Asian students.
+PERBLACK,Percentage of Black students.
+PERHISP,Percentage of Hispanic students.
+PERMINTE,Percentage of minority teachers.
+AVYRSEXP,Average teachers' years of educational service.
+AVSALK,"Average teacher salary including benefits, in thousands."
+PERSPENK,"Per-pupil spending, in thousands."
+PTRATIO,Pupil-teacher ratio.
+PCTAF,Percentage of students taking UC/CSU prep courses.
+PCTCHRT,Percentage of charter schools.
+PCTYRRND,Percentage of year-round schools.
+PERMINTE_AVYRSEXP,Interaction term: minority teachers percentage × average years experience.
+PERMINTE_AVSAL,Interaction term: minority teachers percentage × average salary.
+AVYRSEXP_AVSAL,Interaction term: average years experience × average salary.
+PERSPEN_PTRATIO,Interaction term: per-pupil spending × pupil-teacher ratio.
+PERSPEN_PCTAF,Interaction term: per-pupil spending × UC/CSU prep percentage.
+PTRATIO_PCTAF,Interaction term: pupil-teacher ratio × UC/CSU prep percentage.
+PERMINTE_AVYRSEXP_AVSAL,Interaction term: minority teachers percentage × years experience × salary.
+PERSPEN_PTRATIO_PCTAF,Interaction term: per-pupil spending × pupil-teacher ratio × UC/CSU prep percentage.
+total_tested,Derived: NABOVE + NBELOW.
+pct_above_math_median,Derived: percentage of tested students above national median in math.
+pct_below_math_median,Derived: percentage of tested students below national median in math.
+performance_band,"Derived label based on pct_above_math_median: High performer >=70, Average performer >=50, otherwise Needs attention."
